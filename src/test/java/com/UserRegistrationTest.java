@@ -26,6 +26,17 @@ public class UserRegistrationTest {
 
     }
 
+    @Test
+    public void givenLastName_WhenFirstLatterUpperCase_ShouldReturnTrue() {
+        UserRegistration userRegistration=new UserRegistration();
+        boolean result=userRegistration.validLastName("Raj");
+        Assert.assertTrue(result);
+    }
 
-
+    @Test
+    public void givenLastName_WhenLessThanThreeChars_ShouldReturnFalse() {
+        UserRegistration userRegistration=new UserRegistration();
+        boolean result=userRegistration.validLastName("Ra");
+        Assert.assertFalse(result);
+    }
 }
