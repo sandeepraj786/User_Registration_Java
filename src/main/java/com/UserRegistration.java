@@ -8,6 +8,7 @@ public class UserRegistration {
     private static final String MOB_NUM_PATTERN = "^[0-9]{2}[ ]*[6-9][0-9]{9}$";
     private static final String PASSWORD_PATTERN1 = "(?=.*[A-Z]+)(?=.*[0-9]+).{8,}";
     private static final String PASSWORD_PATTERN2 = "[0-9a-zA-Z]*[^0-9a-zA-Z][0-9a-zA-Z]*";
+    private static final String EMAIL_PATTERN = "^[a-zA-Z0-9]+([._+-][a-zA-Z0-9]+)*@[a-zA-Z0-9]+.[a-zA-Z]{2,4}([.][a-z]{2,4})?$";
 
 
     public boolean validFirstName(String fName) {
@@ -30,6 +31,13 @@ public class UserRegistration {
         Pattern pattern1=Pattern.compile(PASSWORD_PATTERN1);
         Pattern pattern2=Pattern.compile(PASSWORD_PATTERN2);
         return pattern1.matcher(password).matches() && pattern2.matcher(password).matches();
+    }
+
+    public boolean validEmailId(String eMail) {
+        Pattern pattern=Pattern.compile(EMAIL_PATTERN);
+        return pattern.matcher(eMail).matches();
+
+
     }
 }
 

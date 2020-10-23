@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.UserRegistrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-22T09:25:23" hostname="SANDEEP" time="0.003">
+<testsuite name="com.UserRegistrationTest" tests="22" skipped="0" failures="0" errors="0" timestamp="2020-10-23T05:58:15" hostname="SANDEEP" time="0.022">
   <properties/>
-  <testcase name="givenPassword_WhenHasMoreThan1SpecialChar_ShouldReturnFalse" classname="com.UserRegistrationTest" time="0.003"/>
+  <testcase name="givenFirstName_WhenFirstLatterUpperCase_ShouldReturnTrue[0]" classname="com.UserRegistrationTest" time="0.01"/>
+  <testcase name="givenFirstName_WhenFirstLatterUpperCase_ShouldReturnTrue[1]" classname="com.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenFirstName_WhenFirstLatterUpperCase_ShouldReturnTrue[2]" classname="com.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenFirstName_WhenFirstLatterUpperCase_ShouldReturnTrue[3]" classname="com.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenFirstName_WhenFirstLatterUpperCase_ShouldReturnTrue[4]" classname="com.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenFirstName_WhenFirstLatterUpperCase_ShouldReturnTrue[5]" classname="com.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenFirstName_WhenFirstLatterUpperCase_ShouldReturnTrue[6]" classname="com.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenFirstName_WhenFirstLatterUpperCase_ShouldReturnTrue[7]" classname="com.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenFirstName_WhenFirstLatterUpperCase_ShouldReturnTrue[8]" classname="com.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenFirstName_WhenFirstLatterUpperCase_ShouldReturnTrue[9]" classname="com.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenFirstName_WhenFirstLatterUpperCase_ShouldReturnTrue[10]" classname="com.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenFirstName_WhenFirstLatterUpperCase_ShouldReturnTrue[11]" classname="com.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenFirstName_WhenFirstLatterUpperCase_ShouldReturnTrue[12]" classname="com.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenFirstName_WhenFirstLatterUpperCase_ShouldReturnTrue[13]" classname="com.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenFirstName_WhenFirstLatterUpperCase_ShouldReturnTrue[14]" classname="com.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenFirstName_WhenFirstLatterUpperCase_ShouldReturnTrue[15]" classname="com.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenFirstName_WhenFirstLatterUpperCase_ShouldReturnTrue[16]" classname="com.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenFirstName_WhenFirstLatterUpperCase_ShouldReturnTrue[17]" classname="com.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenFirstName_WhenFirstLatterUpperCase_ShouldReturnTrue[18]" classname="com.UserRegistrationTest" time="0.002"/>
+  <testcase name="givenFirstName_WhenFirstLatterUpperCase_ShouldReturnTrue[19]" classname="com.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenFirstName_WhenFirstLatterUpperCase_ShouldReturnTrue[20]" classname="com.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenFirstName_WhenFirstLatterUpperCase_ShouldReturnTrue[21]" classname="com.UserRegistrationTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

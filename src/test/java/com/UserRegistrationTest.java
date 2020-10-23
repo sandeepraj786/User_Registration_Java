@@ -2,8 +2,24 @@ package com;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+
+import java.util.Arrays;
+import java.util.Collection;
+@RunWith(Parameterized.class)
 
 public class UserRegistrationTest {
+    private String eMail;
+    private boolean expectedResult;
+    private UserRegistration userRegistration;
+
+    public UserRegistrationTest(String eMail,boolean expectedResult) {
+        this.eMail = eMail;
+        this.expectedResult = expectedResult;
+    }
+
+
     @Test
     public void givenFirstName_WhenFirstLatterUpperCase_ShouldReturnTrue() {
         UserRegistration userRegistration =new  UserRegistration();
@@ -117,5 +133,37 @@ public class UserRegistrationTest {
         boolean result=userRegistration.validPassword("%*SandeepRaj");
         Assert.assertFalse(result);
 
+    }
+    @Parameterized.Parameters
+    public static Collection eMailIds_WithExpectedResult() {
+        return Arrays.asList(new Object[][] {   {"abc@yahoo.com",true},
+                {"abc-100@yahoo.com",true},
+                {"abc.100@yahoo.com",true},
+                {"abc111@abc.com",true},
+                {"abc-100@abc.net",true},
+                {"abc.100@abc.com.au",true},
+                {"abc@1.com",true},
+                {"abc@gmail.com.com",true},
+                {"abc+100@gmail.com",true},
+                {"abc",false},
+                {"abc@.com.my",false},
+                {"abc123@gmail.a",false},
+                {"abc123@.com",false},
+                {"abc123@.com.com",false},
+                {".abc@abc.com",false},
+                {"abc()*@gmail.com",false},
+                {"abc@%*.com",false},
+                {"abc..2002@gmail.com",false},
+                {"abc.@gmail.com",false},
+                {"abc@abc@gmail.com",false},
+                {"abc@gmail.com.1a",false},
+                {"abc@gmail.com.aa.au",false} });
+    }
+
+    @Test
+    public void givenEmailIds_WhenProper_ShouldReturnExpectedResult() {
+        UserRegistration userRegistration=new UserRegistration();
+        System.out.println("Expected Result:"+ expectedResult);
+        Assert.assertEquals(expectedResult, userRegistration.validEmailId(eMail));
     }
 }
